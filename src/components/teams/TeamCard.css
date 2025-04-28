@@ -1,0 +1,140 @@
+.team-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0.5rem 1.5rem;
+}
+
+.team-image-wrapper {
+  padding: 1rem 1.25rem;
+  border-radius: 50%;
+  border-top-right-radius: 0;
+  background-color: #4c51bf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-image {
+  height: 7rem;
+  width: auto;
+}
+
+@media (min-width: 640px) {
+  .team-image {
+    height: 13rem;
+  }
+}
+
+.team-name {
+  font-size: 1.125rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.team-title {
+  font-size: 1.125rem;
+  color: #3b82f6;
+  margin-top: 0.25rem;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+  color: #a0aec0;
+  font-size: 1.25rem;
+}
+
+.social-icon {
+  margin-right: 0.5rem;
+}
+
+.social-icon:last-child {
+  margin-right: 0;
+}
+
+.team-section {
+  margin: 4rem;
+}
+
+.team-intro {
+  color: #3b82f6;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.team-heading {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.hidden-break {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .hidden-break {
+    display: block;
+  }
+
+  .team-heading {
+    font-size: 3rem;
+  }
+}
+
+.background-shape {
+  position: absolute;
+  top: 0;
+  right: -3.5rem;
+  width: 40%;
+  height: 8rem;
+  background-color: #ebf8ff;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.team-cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+@media (min-width: 640px) {
+  .team-cards-container {
+    justify-content: space-between;
+    margin-top: 2.5rem;
+  }
+}
+
+.team-card-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem;
+}
+
+@media (max-width: 728px) {
+  .team-section {
+    margin: 4rem 2rem;
+  }
+}
+
+.title-background {
+  position: relative;
+  left: 80%;
+  transform: translate(-15%, 125%);
+  width: 35%;
+  height: 130px;
+  background: rgba(219, 234, 254, 0.5);
+  border-bottom-left-radius: 100px;
+  border-top-left-radius: 100px;
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .title-background {
+    display: none;
+  }
+}
