@@ -37,7 +37,11 @@ function Blogs() {
         <section className="blogs-main-cards">
           <div className="blog_lg_card">
             <div className="blog_card_img">
-              <img src="/blog/1.jpg" alt="cup on purple background" />
+              <img
+                src="/blog/1.jpg"
+                alt="cup on purple background"
+                loading="lazy"
+              />
             </div>
             <div
               className="blog-card-details"
@@ -57,7 +61,11 @@ function Blogs() {
           </div>
           <div className="blog_lg_card">
             <div className="blog_card_img2">
-              <img src="/blog/2.jpg" alt="cup on purple background" />
+              <img
+                src="/blog/2.jpg"
+                alt="cup on purple background"
+                loading="lazy"
+              />
             </div>
             <div
               className="blog-card2-details"
@@ -77,7 +85,11 @@ function Blogs() {
           </div>
           <div className="blog_lg_card">
             <div className="blog_card_img">
-              <img src="/blog/3.jpg" alt="cup on purple background" />
+              <img
+                src="/blog/3.jpg"
+                alt="cup on purple background"
+                loading="lazy"
+              />
             </div>
             <div
               className="blog-card-details"
@@ -100,7 +112,12 @@ function Blogs() {
         <section className="blogs-flex-cards">
           {data.map(({ id, heading, text, color, badge }) => (
             <div className="blog-card" key={id}>
-              <img src={`/blog/${id}.jpg`} className="blog-image" alt="" />
+              <img
+                src={`/blog/${id}.jpg`}
+                className="blog-image"
+                alt=""
+                loading="lazy"
+              />
               <div className="blog_card_content">
                 <span className={`blog-badge-card blog-badge-${color}`}>
                   {badge}
